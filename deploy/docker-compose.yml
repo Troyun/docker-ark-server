@@ -16,14 +16,14 @@ services:
       - ark-data:/app
     environment:
       - SESSION_NAME=troyunz
-      - SERVER_MAP=${SERVER_MAP}
-      - SERVER_PASSWORD=${SERVER_PASSWORD}
-      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
-      - MAX_PLAYERS=${MAX_PLAYERS}
-      - UPDATE_ON_START=${UPDATE_ON_START}
-      - BACKUP_ON_STOP=${BACKUP_ON_STOP}
-      - PRE_UPDATE_BACKUP=${PRE_UPDATE_BACKUP}
-      - WARN_ON_STOP=${WARN_ON_STOP}
+      - SERVER_MAP=TheIsland
+      - SERVER_PASSWORD=manshu55
+      - ADMIN_PASSWORD=manshu55
+      - MAX_PLAYERS=10
+      - UPDATE_ON_START=false
+      - BACKUP_ON_STOP=false
+      - PRE_UPDATE_BACKUP=true
+      - WARN_ON_STOP=true
     ports:
       # Port for connections from ARK game client
       - "7777:7777/udp"
